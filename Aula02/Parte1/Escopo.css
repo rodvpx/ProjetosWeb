@@ -1,0 +1,24 @@
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-family: helvetica;
+    color: darkcyan;
+}
+
+footer {
+    font-family: helvetica;
+}
+
+p {
+    font-family: helvetica;
+    font-size: 15px;
+    color: rgb(38, 133, 222);
+}
+
+div {
+    background-color: wheat;
+    width: 500px;
+    color: black;
+}

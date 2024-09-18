@@ -1,0 +1,35 @@
+html {
+  font-family: Helvetica;
+  color: white;
+  background-color: #528b8b;
+}
+
+#ft_perfil {
+  width: 100px;
+  height: auto;
+  border: 5px solid cyan;
+  border-radius: 100px;
+}
+
+#nome_principal {
+  color: gold;
+  font-size: 35px;
+}
+
+#nome_projetos {
+  padding: 10px 0px 10px 20px;
+  block-size: auto;
+  border: 5px solid gold;
+  border-radius: 10px;
+}
+
+.link_projetos {
+  color: white;
+}
+
+#lista_style {
+  block-size: 150px;
+  background-color: #0099ff8c;
+  border: 5px solid gold;
+  border-radius: 15px;
+}

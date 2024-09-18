@@ -1,0 +1,19 @@
+html {
+  background-color: rgb(84, 180, 215);
+}
+
+#titulo1 {
+  color: yellow;
+}
+
+#titulo2 {
+  color: grey;
+}
+.texto1 {
+  color: white;
+}
+h1,
+h2,
+p {
+  font-family: helvetica;
+}

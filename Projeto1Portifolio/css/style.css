@@ -1,35 +1,62 @@
 html {
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
   color: white;
   background-color: #528b8b;
+}
+
+#container {
+  display: flex;
+  align-items: center; /* Alinha verticalmente o conteúdo */
+  justify-content: flex-start;
 }
 
 #ft_perfil {
   width: 100px;
   height: auto;
   border: 5px solid cyan;
-  border-radius: 100px;
+  border-radius: 50%;
 }
 
 #nome_principal {
-  color: gold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.304);
   font-size: 35px;
+  text-align: left; /* Alinha o texto à esquerda */
+  margin-left: 20px; /* Espaço entre a imagem e o texto */
+  padding: 10px 20px;
+  border: 5px solid cyan;
+  border-radius: 10px; /* Inclui o padding na largura total */
+  flex-grow: 1;
+  box-sizing: border-box;
 }
 
 #nome_projetos {
-  padding: 10px 0px 10px 20px;
-  block-size: auto;
+  padding: 10px 20px; /* Ajuste para espaço interno */
   border: 5px solid gold;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.304);
   border-radius: 10px;
+  text-align: center;
 }
 
 .link_projetos {
-  color: white;
+  font-size: 20px;
+  color: gold;
 }
 
-#lista_style {
-  block-size: 150px;
+.div_topicos {
   background-color: #0099ff8c;
   border: 5px solid gold;
   border-radius: 15px;
+  padding: 10px; /* Espaço interno da lista */
+  list-style: square; /* Define o estilo dos itens da lista */
+  margin-top: 15px;
+}
+
+#div_central {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #528b8b;
+  box-sizing: border-box;
 }

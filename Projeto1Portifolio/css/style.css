@@ -1,33 +1,98 @@
 html {
   font-family: Helvetica, sans-serif;
   color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
   background-color: #528b8b;
+  box-sizing: border-box;
 }
 
-#container {
+nav {
+  background-color: gold;
+  border: 3px transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Faz a barra ocupar toda a largura da tela */
+  padding: 1rem 1rem;
+}
+
+.nav-links {
+    list-style-type: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens da lista horizontalmente */
+    justify-content: center; /* Centraliza os links de navegação horizontalmente no centro do contêiner flexível (só funciona pois os elementos estão flexíveis pelo display flex) */
+    gap: 1rem; /* Espaçamento entre os itens da barra de navegação | PARA RESPONSIVO TEM QUE FAZER DE OUTRA FORMA.*/
+    padding: 0; /* Remove o espaçamento padrão da lista */
+    margin: 0; /* Remove margem externa da lista */
+    align-items: center; /* Centraliza os itens verticalmente dentro do contêiner flexível. */
+}
+
+.nav-links li a {
+  background-color: #0099ff;
+    color: #fff; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 1.1rem; /* Tamanho do texto dos links, define como pouca coisa maior do que o tamanho do texto da fonte do documento */
+    padding: 0.5rem 1rem; /* Aplica um espaçamento interno de 0.5rem nas partes superior e inferior, e 1rem nas laterais dos links (aumenta a área clicável e melhora a legibilidade dos links)*/
+    border-radius: 5px; /* Bordas arredondadas nos links */
+    transition: background-color 0.3s ease; /* Define uma transição suave da cor de fundo ao passar o mouse sobre os links - a transição dura 0.3s (300ms) e usa o efeito de transição ease, que começa devagar, acelera no meio e desacelera no final.  */
+}
+
+/* Efeito ao passar o mouse nos links */
+.nav-links li a:hover {
+    background-color: #007BFF; /* Muda a cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+/* Efeito ao clicar no link */
+.nav-links li a:active {
+    background-color: #0056b3; /* Cor mais escura ao clicar */
+}
+
+
+#about-container {
   display: flex;
-  align-items: center; /* Alinha verticalmente o conteúdo */
-  justify-content: flex-start;
+  flex-direction: column; /* Organiza os elementos em coluna */
+  border: 5px solid gold;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 10%;
+  background-color: #0099ff8c;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espaço entre o header e o parágrafo */
+}
+
+#title-about {
+  border: 3px solid;
+  border-radius: 10px;
+  border-color: gold;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 5px 0px -25px;
+  background-color: rgba(0, 0, 0, 0.304);
+}
+
+#text-about {
+  border: 3px solid gold;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: justify;
+  margin-top: -3%;
+  margin-bottom: auto;
+  background-color: rgba(0, 0, 0, 0.304);
 }
 
 #ft_perfil {
   width: 100px;
   height: auto;
-  border: 5px solid cyan;
+  border: 3px solid gold;
   border-radius: 50%;
-}
-
-#nome_principal {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.304);
-  font-size: 35px;
-  text-align: left; /* Alinha o texto à esquerda */
-  margin-left: 20px; /* Espaço entre a imagem e o texto */
-  padding: 10px 20px;
-  border: 5px solid cyan;
-  border-radius: 10px; /* Inclui o padding na largura total */
-  flex-grow: 1;
-  box-sizing: border-box;
+  margin-left: -35px;
 }
 
 #nome_projetos {
@@ -47,14 +112,6 @@ html {
   margin-top: 15px;
 }
 
-#div_central {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #528b8b;
-  box-sizing: border-box;
-}
-
 details {
   cursor: pointer; /* Mostra que é clicável */
 }
@@ -68,11 +125,8 @@ details summary {
 
 .h3_top {
   margin: 0; /* Remove margem do h3 para evitar espaçamentos indesejados */
-  border: 5px solid cyan;
-  border-radius: 0;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
+  width: 60%;
+  border-bottom: 5px solid cyan;
   margin-left: 5px;
 }
 
